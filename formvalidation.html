@@ -6,29 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<form action="jsreviewtask14.html" onsubmit="return check()" >
-		<div>
-			<label for="name1">name:</label>
-			<input type="text" id="name" placeholder="entername">
-			<p id="para"><p>
-		</div>
-		<div>
-			<label for="name2">age:</label>
-			<input type="text" id="age" placeholder="enterage">
-		</div>
-		<div>
-			<input type="submit">
-		</div>
-	</form>
+	<!-- <form action="jsreviewtask14.html" onsubmit="return check()" > -->
+		<!-- <div> -->
+			<!-- <label for="name">name:</label> -->
+			<!-- <input type="text" id="name" placeholder="entername"> -->
+			<!-- <p id="para"><p> -->
+		<!-- </div> -->
+		<!-- <div> -->
+			<!-- <label for="age">age:</label> -->
+			<!-- <input type="text" id="age" placeholder="enterage"> -->
+		<!-- </div> -->
+		<!-- <div> -->
+			<!-- <input type="submit"> -->
+		<!-- </div> -->
+	<!-- </form> -->
+	<input type="text" id="name" placeholder="enter your name" value="">
+	<input type="text" id="age" placeholder="enter your age" value="">
+	<input type="email" id="email" placeholder="enter your email" value="">
+	<input type="submit" id="sub">
 	<script>
-		function check(){
-			var name=document.getElementById("name").value;
-			var age=document.getElemenById("age").value;
-			if(name==""){
+		 let btn=document.getElementById("sub");
+		 sub.addEventListener("click",myfunction);
+		function myfunction(){
+			var input1=document.getElementById("name").value;
+			var input2=document.getElemenById("age").value;
+			var input3=document.getElemenById("age").value;
+			if(input1==""){
 				alert("please enter the name");
 			}
-			else if(age=""){
+			else if(input2=""){
 				alert("plese enter the age");
+			}
+			else if(input3=""){
+				alert("plese enter the email");
 			}
 		}
 	</script>
