@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<input type="text" id="name" placeholder="enter your name" value="">
-	<input type="text" id="age" placeholder="enter your age" value="">
-	<input type="email" id="email" placeholder="enter your email" value="">
+	<input type="text" id="nameinput" placeholder="enter your name" value="">
+	<input type="text" id="ageinput" placeholder="enter your age" value="">
+	<input type="email" id="emailinput" placeholder="enter your email" value="">
 	<input type="submit" id="sub">
 	<p id="para"></P>
 	<script>
 		 let btn=document.getElementById("sub");
 		 sub.addEventListener("click",myfunction);
 		function myfunction(){
-			var input1=document.getElementById("name").value;
-			var input2=document.getElementById("age").value;
-			var input3=document.getElementById("age").value;
+			var input1=document.getElementById("nameinput").value;
+			var input2=document.getElementById("ageinput").value;
+			var input3=document.getElementById("emailinput").value;
 			if(input1==""){
 				document.getElementById("para").innerHTML="please enter your name"
 			}
@@ -28,7 +28,6 @@
 				document.getElementById("para").innerHTML="please enter your email"
 			}
 		}
-	</script>
-	
+		
 </body>
 </html>
