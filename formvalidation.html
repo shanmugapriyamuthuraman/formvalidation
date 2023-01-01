@@ -6,28 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<input type="text" id="nameinput" placeholder="enter your name" value="">
-	<input type="text" id="ageinput" placeholder="enter your age" value="">
-	<input type="email" id="emailinput" placeholder="enter your email" value="">
-	<input type="submit" id="sub">
-	<p id="para"></P>
+	<section class="container">
+		<form class="form" id="form" action="" onsubmit="return myfunction()">
+			<div class="form-control">
+			<label for="username">User Name</label>
+			<input type="text" placeholder="enter your name" value="" id="username">
+			</div>
+			<div class="form-control">
+			<label for="useremail">User Email</label>
+			<input type="text" placeholder="enter your email" value="" id="useremail">
+			</div>
+			<div class="form-control">
+			<label for="userpassword">User Password</label>
+			<input type="text" placeholder="enter your password" value="" id="userpassword">
+			</div>
+			<div class="form-control">
+			<label for="userpassword1">User Password1</label>
+			<input type="text" placeholder="enter your password1" value="" id="userpassword1">
+			</div>
+			<input type="submit" id="submit" >
+		</form>
+	
+	</section>
 	<script>
-		 let btn=document.getElementById("sub");
-		 sub.addEventListener("click",myfunction);
-		function myfunction(){
-			var input1=document.getElementById("nameinput").value;
-			var input2=document.getElementById("ageinput").value;
-			var input3=document.getElementById("emailinput").value;
-			if(input1==""){
-				document.getElementById("para").innerHTML="please enter your name"
-			}
-			else if(input2=""){
-				document.getElementById("para").innerHTML="please enter your age"
-			}
-			else if(input3=""){
-				document.getElementById("para").innerHTML="please enter your email"
-			}
+	function myfunction(){
+		let Name=document.getElementById("username").value;
+		let Email=document.getElementById("useremail").value;
+		let Password=document.getElementById("userpassword").value;
+		let Password1=document.getElementById("userpassword1").value;
+		if(Name=""){
+			alert("please enter your name");
+			return flase;
 		}
-		
+		else if(Email=""){
+			alert("please enter your email");
+			return flase;
+		}
+		else if(Password=""){
+			alert("please enter your password ");
+			return flase;
+		}
+		else if(password1=""){
+			alert("please enter correct password");
+			return flase;
+		}
+	}
+	
+	</script>
 </body>
 </html>
